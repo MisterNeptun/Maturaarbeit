@@ -5,6 +5,8 @@ from immobilie import Immobilie
 from werke import Werke
 from bahnen import Bahnen
 import sys, pygame
+from spieler_mensch import Mensch
+from strategie_2 import Strategie_2
 
 pygame.init()
 
@@ -18,8 +20,8 @@ grund = pygame.transform.smoothscale(grund, (900, 1260))
 nochnichtgekaufteimmobilien = []
 verkaufteimobilien = []
 
-player1 = Spieler()
-player2 = Spieler()
+player1 = Mensch()
+player2 = Strategie_2()
 
 font = pygame.font.SysFont(None, 35)
 text1 = font.render("Spieler1 Vermögen:", True, "Black")
@@ -149,6 +151,7 @@ while True:
                 gameon=True
 
     if gameon==True:
+        """""
 
         draw()
         time.sleep(1)
@@ -172,31 +175,34 @@ while True:
                     break
 
         """""
+        player1.wurf_grafisch(verkaufteimobilien,karten1,karten2,karten1zumauffuellen,karten2zumauffuellen,nochnichtgekaufteimmobilien,draw)
+        draw()
         while True:
             draw()
-            eingabe=input("aktion kaufen:k bauen:b abbauen:a beenden:s")
-            if eingabe=="k":
-                player1.kaufen(nochnichtgekaufteimobilien, verkaufteimobilien)
-                draw()
+            eingabe=input("aktion  bauen:b abbauen:a beenden:s")
             if eingabe == "b":
                 pos=int(input("POS"))
                 for i in range(len(player1.gekauft)):
                     if pos==player1.gekauft[i].position:
-                        player1.gekauft[i].bauen(player1)
+                        player1.gekauft[i].bauen(player1,verkaufteimobilien)
             if eingabe == "a":
                 pos=int(input("POS"))
                 for i in range(len(player1.gekauft)):
                     if pos==player1.gekauft[i].position:
                         player1.gekauft[i].abbauen(player1)
             if eingabe=="s":
-                break
-        """""
+                if player1.geld<0:
+                    pygame.quit()
+                else:
+                    break
+
 
         time.sleep(1)
         print("xxxxxxxxxxxx")
         player2.wurf_grafisch(verkaufteimobilien, karten1, karten2, karten1zumauffuellen, karten2zumauffuellen, nochnichtgekaufteimmobilien, draw)
         draw()
         time.sleep(1)
+        """""
         for i in range(len(player2.gekauft)):
             player2.gekauft[i].bauen(player2,verkaufteimobilien)
         if player2.geld < 0:
@@ -208,6 +214,32 @@ while True:
                         break
                 if player2.geld >= 0:
                     break
+        """
+        if player2.wert2 * 10000 > player2.geld:
+            player2.gekauft.sort(key=lambda x: x.startwert, reverse=player2.wert3)
+            for i in range(len(player2.gekauft)):
+                player2.gekauft[i].bauen(player2,verkaufteimobilien)
+                draw()
+                if player2.wert2 * 10000 < player2.geld:
+                    break
+
+        #print(player1.geld, player2.geld)
+        if player2.geld<0:
+            while True:
+                player2.gekauft.sort(key=lambda x: x.startwert, reverse= not player2.wert3)
+                x=0
+                for i in range(len(player2.gekauft)):
+                    x = x + player2.gekauft[i].haeuser
+                    player2.gekauft[i].abbauen(player2)
+                    draw()
+                    if player2.geld >= 0:
+                        break
+                if player2.geld >= 0:
+                    break
+
+
+
+
 
         draw()
     else:

@@ -12,16 +12,16 @@ Attribute:
 
 Eigenschaften:
 Bauen:
--überprüft, ob man bauen darf mit der Funktion Bauenüberprüfen().
+-überprüft, ob man bauen darf mit der Funktion Bauenüberprüfen.
 -zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
 Abbauen:
--überprüft, ob man abbauen darf mit der Funktion Abbauenüberprüfen()
+-überprüft, ob man abbauen darf mit der Funktion Abbauenüberprüfen
 -gibt ein Teil des Geldes zurück, baut Haus ab und senkt den Preis des Feldes.
 Bauenueberpruefen:
 -In den ersten ca. 9 Zeilen überprüft das Programm ob schon alle Häuser, respektive Hotels verbaut wurden.
 - Dann kommt für jede Immobiliengruppe («Farbgruppe») ein Teil, der überprüft, ob man bauen kann, denn man muss ja innerhalb der Gruppe synchron bauen.
 Abbauenüueberpruefen:
--überprüft, ob man abbauen darf, da man dies auch synchron tun muss (funktioniert gleich wie Bauenueberpruefen().
+-überprüft, ob man abbauen darf, da man dies auch synchron tun muss (funktioniert gleich wie Bauenueberpruefen.
 
 
 Bahnen.py und Werke.py
@@ -62,10 +62,10 @@ Grafische Position
 Rechnet die Position des Spielers in der grafischen Umsetzung aus.
 
 Wurf_grafisch
-Macht das Gleiche wie die Funktion «Wurf», ausserdem sind hier noch die Funktionen draw() und grafischeposition() integriert. Diese sind zuständig, dass der Spieler auch während seinem Zug auf dem grafischen Spielfeld gezeichnet wird.
+Macht das Gleiche wie die Funktion «Wurf», ausserdem sind hier noch die Funktionen draw und grafischeposition integriert. Diese sind zuständig, dass der Spieler auch während seinem Zug auf dem grafischen Spielfeld gezeichnet wird.
 
 M.py
-Hier wird zuerst die Matrix definiert. In der Funktion Wahrscheinlichkeiten() wird die Zugwahrscheinlichkeit nach einer bestimmten Anzahl von Zügen ausgerechnet.
+Hier wird zuerst die Matrix definiert. In der Funktion Wahrscheinlichkeiten wird die Zugwahrscheinlichkeit nach einer bestimmten Anzahl von Zügen ausgerechnet.
 
 Np.py
 

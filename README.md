@@ -5,23 +5,23 @@ Dokumentation
 
 Immobilie.py
 Attribute:
--Die meisten Attribute sind vom Namen her selbsterklärend /n
--self.x und self.y sind für die Position in der grafischen Umsetzung
--self.startwert Kaufpreis des Grundstückes
--self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das synchrone bauen)
+- Die meisten Attribute sind vom Namen her selbsterklärend 
+- self.x und self.y sind für die Position in der grafischen Umsetzung
+- self.startwert Kaufpreis des Grundstückes
+- self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das synchrone bauen)
 
 Eigenschaften:
 Bauen:
--überprüft, ob man bauen darf mit der Funktion Bauenüberprüfen().
--zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
+- Überprüft, ob man bauen darf mit der Funktion Bauenüberprüfen().
+- Zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
 Abbauen:
--überprüft, ob man abbauen darf mit der Funktion Abbauenüberprüfen()
--gibt ein Teil des Geldes zurück, baut Haus ab und senkt den Preis des Feldes.
+- Überprüft, ob man abbauen darf mit der Funktion Abbauenüberprüfen()
+- Gibt ein Teil des Geldes zurück, baut Haus ab und senkt den Preis des Feldes.
 Bauenueberpruefen:
--In den ersten ca. 9 Zeilen überprüft das Programm ob schon alle Häuser, respektive Hotels verbaut wurden.
+- In den ersten ca. 9 Zeilen überprüft das Programm ob schon alle Häuser, respektive Hotels verbaut wurden.
 - Dann kommt für jede Immobiliengruppe («Farbgruppe») ein Teil, der überprüft, ob man bauen kann, denn man muss ja innerhalb der Gruppe synchron bauen.
 Abbauenüueberpruefen:
--überprüft, ob man abbauen darf, da man dies auch synchron tun muss (funktioniert gleich wie Bauenueberpruefen().
+- Überprüft, ob man abbauen darf, da man dies auch synchron tun muss (funktioniert gleich wie Bauenueberpruefen().
 
 
 Bahnen.py und Werke.py

@@ -33,12 +33,12 @@ Spieler.py
 
 Attribute:
 -Die meisten Attribute sind vom Namen her selbsterklärend
--self.paschEine Zahl wie viel Mal hintereinander ein Pasch geworfen wurde
--self.posx und .posyIst die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
+-self.pasch Eine Zahl wie viel Mal hintereinander ein Pasch geworfen wurde
+-self.posx und self.posy Ist die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
 -self.gefängniskartenIst die Anzahl der Karten die man besitzt, mit denen man ohne Busse aus dem Gefängnis gehen kann
--self.gekauftIst eine Liste mit allen gekauften Immobilien
+-self.gekauft Ist eine Liste mit allen gekauften Immobilien
 -self.bahnen,self.werke,self.eins-self.achtSind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des synchronen Bauens.
--self.gefängnisKann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
+-self.gefängnis Kann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
 Eigenschaften:
 Wurf:
 1.	Erstellt es zufällig die Ergebnisse der beiden Würfel

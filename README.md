@@ -7,8 +7,8 @@ Immobilie.py
 Attribute:
 -Die meisten Attribute sind vom Namen her selbsterklärend
 -self.x und self.y sind für die Position in der grafischen Umsetzung
--self.startwertKaufpreis des Grundstückes
--self.farbeImmobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das synchrone bauen)
+-self.startwert Kaufpreis des Grundstückes
+-self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das synchrone bauen)
 
 Eigenschaften:
 Bauen:

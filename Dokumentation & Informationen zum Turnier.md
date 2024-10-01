@@ -87,7 +87,7 @@ Grafisch Main.py
 
 Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafischen Elemente noch in das Programm mit einfliessen. Der deaktivierte Teil des Programms ist der Teil, der einen Spieler das Spiel gegen den Computer spielen lässt.
 
-Das implementieren einer Strategie am Beispiel der Strategie 2:
+Das implementieren einer Strategie am Beispiel aus dem Ordner "Erklärung der Dokumentation":
 
 Wir haben das Auswertungsprogramm «main spieler_2.py».
 In das importieren wir eine neue erstellte Version der Programme Spiel.py und Spieler.py. Hier sind das «spiel_2.py» und spiler_2.py» welches einfach Kopien des originalen «spieler.py» und «spiel.py» sind.
@@ -101,8 +101,8 @@ Am Ende muss man im Teil unter den for-Schleifen die Initialisierung der Spieler
 
 ### Runde 1
 
-Alle geldbasierten Strategien und deren Ergebnisse finden sich im Ordner "Strategie 3" wieder.
-Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse finden sich im Ordner "Strategie 4" wieder.
+Alle geldbasierten Strategien und deren Ergebnisse finden sich im Ordner "Geldbasierte Strategien des Turniers" wieder.
+Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse finden sich im Ordner "Wahrscheinlichkeitsbasierte Strategien des Turniers" wieder.
 
 ### Runde 2
 

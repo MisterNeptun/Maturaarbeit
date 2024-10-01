@@ -1,7 +1,7 @@
 # Maturaarbeit
 ## Auf der Suche nach der besten Strategie für das Spiel "Monopoly"
 
-Dokumentation 
+### Dokumentation 
 
 Immobilie.py
 Attribute:

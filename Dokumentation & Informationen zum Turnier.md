@@ -101,12 +101,16 @@ Am Ende muss man im Teil unter den for-Schleifen die Initialisierung der Spieler
 
 ### Runde 1
 
-Alle geldbasierten Strategien und deren Ergebnisse finden sich im Ordner "Strategie 3" wieder
-Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse finden sich im Ordner "Strategie 4" wieder
+Alle geldbasierten Strategien und deren Ergebnisse finden sich im Ordner "Strategie 3" wieder.
+Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse finden sich im Ordner "Strategie 4" wieder.
 
 ### Runde 2
 
-Die Sachen zu dieser Runde finden sich im Ordner "Random" wieder
+Die Sachen zu dieser Runde finden sich im Ordner "Random" wieder.
+
+Die fünf besten geldbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 1-5 in dem Ordner
+Die fünf besten wahrscheinlichkeitsbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 6-10 in dem Ordner
+
 
 
 

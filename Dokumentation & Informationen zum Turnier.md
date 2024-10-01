@@ -3,7 +3,7 @@
 
 ### Dokumentation 
 
-Immobilie.py
+#### Immobilie.py
 Attribute:
 - Die meisten Attribute sind vom Namen her selbsterklärend 
 - self.x und self.y sind für die Position in der grafischen Umsetzung
@@ -24,12 +24,12 @@ Abbauenüueberpruefen:
 - Überprüft, ob man abbauen darf, da man dies auch synchron tun muss (funktioniert gleich wie Bauenueberpruefen().
 
 
-Bahnen.py und Werke.py
+#### Bahnen.py und Werke.py
 Beide sind eigentlich gleich wie Immobilien, mit den Unterschieden, dass man auf ihnen nicht bauen kann und dass die Beträge, die man dem Eigentümer beim Betreten des Feldes zahlen muss, anders berechnet werden. Diese Beträge werden jedoch an einem anderen Ort berechnet. Darum ist diese Klasse sehr ähnlich wie die Immobilien Klasse.
 
 
 
-Spieler.py
+#### Spieler.py
 
 Attribute:
 -Die meisten Attribute sind vom Namen her selbsterklärend
@@ -64,15 +64,15 @@ Rechnet die Position des Spielers in der grafischen Umsetzung aus.
 Wurf_grafisch
 Macht das Gleiche wie die Funktion «Wurf», ausserdem sind hier noch die Funktionen draw() und grafischeposition() integriert. Diese sind zuständig, dass der Spieler auch während seinem Zug auf dem grafischen Spielfeld gezeichnet wird.
 
-M.py
+#### M.py
 Hier wird zuerst die Matrix definiert. In der Funktion Wahrscheinlichkeiten() wird die Zugwahrscheinlichkeit nach einer bestimmten Anzahl von Zügen ausgerechnet.
 
-Np.py
+#### Np.py
 
 In diesem Programm habe ich mir das Rechnen mit Matrizen am Computer beigebracht. Hier findet man noch eine Funktion für Eigenwerte und Eigenvektoren, die ich in M.py nie verwendet habe.
 
 
-Spiel.py
+#### Spiel.py
 In der Funktion Spiel wird zuerst alles nötige importiert und initialisiert, wie zum Beispiel die Immobilien oder die Ereigniskartenliste.
 In der for-Schleife findet dann erst das richtige Spiel statt.
 1.	Es wird die Funktion Wurf aufgerufen
@@ -83,11 +83,11 @@ In der for-Schleife findet dann erst das richtige Spiel statt.
 
 
 
-Grafisch Main.py
+#### Grafisch Main.py
 
-Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafischen Elemente noch in das Programm mit einfliessen. Der deaktivierte Teil des Programms ist der Teil, der einen Spieler das Spiel gegen den Computer spielen lässt.
+Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafischen Elemente noch in das Programm mit einfliessen.  Es ist ein Programm in dem einen Spieler das Spiel gegen die Siegerstrategie spielen kann.
 
-Das implementieren einer Strategie am Beispiel aus dem Ordner "Erklärung der Dokumentation":
+## Das implementieren einer Strategie am Beispiel aus dem Ordner "Erklärung der Dokumentation":
 
 Wir haben das Auswertungsprogramm «main spieler_2.py».
 In das importieren wir eine neue erstellte Version der Programme Spiel.py und Spieler.py. Hier sind das «spiel_2.py» und spiler_2.py» welches einfach Kopien des originalen «spieler.py» und «spiel.py» sind.

@@ -108,9 +108,12 @@ Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse finden sich im
 
 Die Sachen zu dieser Runde finden sich im Ordner "Random" wieder.
 
-Die fünf besten geldbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 1-5 in dem Ordner
-Die fünf besten wahrscheinlichkeitsbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 6-10 in dem Ordner
+Die fünf besten geldbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 1-5 in dem Ordner.
+Die fünf besten wahrscheinlichkeitsbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 6-10 in dem Ordner.
 
+### Runde 3
+
+Im Ordner "Finale Strategien" finden sich alles aus Runde 3 wieder
 
 
 

@@ -97,5 +97,16 @@ Jetzt passt man den Block mit den for-Schleifen an. Es muss für den ersten Spie
 Am Ende muss man im Teil unter den for-Schleifen die Initialisierung der Spieler, den Vergleich ob zweimal dieselbe Strategie vorhanden ist und die Addition in der Auswertungsliste an die Anzahl der Parameter anpassen.
 
 
+## Das Turnier
+
+### Runde 1
+
+Alle geldbasierten Strategien und deren Ergebnisse finden sich im Ordner "Strategie 3" wieder
+Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse finden sich im Ordner "Strategie 4" wieder
+
+### Runde 2
+
+Die 
+
 
 

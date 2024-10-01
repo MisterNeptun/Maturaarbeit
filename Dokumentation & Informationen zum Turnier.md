@@ -106,7 +106,7 @@ Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse finden sich im
 
 ### Runde 2
 
-Die 
+Die Sachen zu dieser Runde finden sich im Ordner "Random" wieder
 
 
 

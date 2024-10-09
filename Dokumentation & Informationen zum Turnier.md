@@ -1,9 +1,8 @@
 # Maturaarbeit
 ## Auf der Suche nach der besten Strategie für das Spiel "Monopoly"
 
-### Dokumentation 
 
-#### Aufbau
+#### Ordnerstruktur
 
 ```bash
 ├── Dokumentation & Informationen zum Turnier.md
@@ -65,7 +64,7 @@
     └── np.py
 ```
 
-
+### Dokumentation des Programms
 
 #### Immobilie.py
 Attribute:

@@ -3,6 +3,70 @@
 
 ### Dokumentation 
 
+#### Aufbau
+
+```bash
+├── Dokumentation & Informationen zum Turnier.md
+├── Erklärung der Dokumentation
+│   ├── Ergebniss
+│   ├── main spieler_2.py
+│   ├── spiel_2.py
+│   └── spieler_2.py
+├── Finale Strategien
+│   ├── Ergebnisse
+│   ├── main_final.py
+│   ├── spiel_final.py
+│   ├── strategie_1.py
+│   ├── strategie_2.py
+│   ├── strategie_3.py
+│   ├── strategie_4.py
+│   └── strategie_5.py
+├── Geldbasierte Strategien des Turniers
+│   ├── Ergebnisse_3
+│   ├── Erggebnisse3.xlsx
+│   ├── main_3.py
+│   ├── spiel_3.py
+│   └── spieler_3.py
+├── M.py
+├── Random
+│   ├── main_random.py
+│   ├── spiel_random_geld.py
+│   ├── spiel_random_wahrscheinlichkeiten.py
+│   ├── spieler_random.py
+│   ├── strategie_1.py
+│   ├── strategie_10.py
+│   ├── strategie_2.py
+│   ├── strategie_3.py
+│   ├── strategie_4.py
+│   ├── strategie_5.py
+│   ├── strategie_6.py
+│   ├── strategie_7.py
+│   ├── strategie_8.py
+│   └── strategie_9.py
+├── Wahrscheinlichkeitsbasierte Strategien des Turniers
+│   ├── Ergebnisse
+│   ├── Erggebnisse4.xlsx
+│   ├── main_4.py
+│   ├── spiel_4.py
+│   └── spieler_4.py
+├── bahnen.py
+├── grafisch main.py
+├── image
+│   └── Spielfeld_Monopoly.png
+├── immobilie.py
+├── spiel.py
+├── spieler.py
+├── spieler_mensch.py
+├── werke.py
+└── Übungsprogramm
+    ├── Strategie_1
+    │   ├── main spieler_1.py
+    │   └── spieler_1.py
+    └── np.py
+```
+
+
+
 #### Immobilie.py
 Attribute:
 - Die meisten Attribute sind vom Namen her selbsterklärend 

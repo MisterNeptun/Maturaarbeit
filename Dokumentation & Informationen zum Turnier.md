@@ -74,7 +74,7 @@ Die folgenden Programmdateien bilden die Basis für die spezifischen Programme d
 Die meisten Attribute sind vom Namen her selbsterklärend 
 - self.x und self.y sind wichtig für die Position in der grafischen Umsetzung
 - self.startwert ist der Kaufpreis des Grundstückes
-- self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das Synchronebauen)
+- self.farbe Immobilien sind auf  Spielfeld in Farbgruppen angeordnet(wichtig für das Synchronebauen) und hier ist die jeweilige Gruppe gespeichert. 
 
 ##### Eigenschaften:
 Bauen:

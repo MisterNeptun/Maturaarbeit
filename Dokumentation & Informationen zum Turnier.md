@@ -116,7 +116,7 @@ Wurf:
 7.	Als letztes werde ich, wenn ich im Gefängnis bin, noch bestraft. Dies entweder mit einer Busse oder so dass ich eine Gefängniskarte verliere.
 
 Bezahlen:<br>
-Zuerst sucht man, ob die eigene Position mit der eines verkauften Grundstückes übereinstimmt. Hier wird überprüft, ob es sich um ein Werk, eine Bahn oder um eine normale Immobilie handelt. Als letztes wird dem Besitzer die entsprechende Summe bezahlt, ist die Immobilie ein Werk oder eine Bahn muss diese Summe zuerst noch ermittelt werden.
+Zuerst sucht man, ob die eigene Position mit der eines verkauften Grundstückes übereinstimmt. Dann wird überprüft, ob es sich um ein Werk, eine Bahn oder um eine normale Immobilie handelt. Als letztes wird dem Besitzer die entsprechende Summe bezahlt, ist die Immobilie ein Werk oder eine Bahn muss diese Summe zuerst noch ermittelt werden.
 
 Kaufen:<br>
 Diese Funktion wird aufgerufen, wenn man ein Grundstück kaufen will. Zuerst wird überprüft, ob das Feld schon verkauft wurde oder nicht. Ist es noch nicht verkauft, wird es wieder nach Farbgruppe gruppiert. In den Gruppen wird es in die entsprechende Liste hinzugefügt und wenn man dann die Gruppe komplett hat, wird der Anfangswert verdoppelt. Als letztes zahlt man noch den Kaufpreis und gewisse Listen werden aktualisiert.

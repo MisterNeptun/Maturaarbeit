@@ -152,15 +152,15 @@ In der for-Schleife findet dann erst das richtige Spiel statt.
 
 Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafischen Elemente noch in das Programm mit einfliessen.  Es ist ein Programm in dem einen Spieler das Spiel gegen die Siegerstrategie spielen kann. Wenn man es startet,öffnet sich ein Fenster mit dem Spiel, die Aktionen werden aber durch Eingaben (Die Eingaben sind Buchstaben, diese werden mit den dazu gehörenden Aktionen angezeigt) im Terminal/Inputfeld gesteuert. Um das Spiel zu starten, drückt der Spieler die Leertaste, sobald das Monopoly-Fenster geöffnet ist. "spieler_mensch.py" ist die "spieler.py" Version für den menschlichen Spieler.
 
-## Das implementieren einer Strategie am Beispiel aus dem Ordner "Erklärung der Dokumentation":
+## Das Implementieren einer Strategie am Beispiel aus dem Ordner "Erklärung der Dokumentation":
 
 Wir haben das Auswertungsprogramm «main spieler_2.py».
 In das importieren wir eine neue erstellte Version der Programme Spiel.py und Spieler.py, welches auf die spezifischen Strategien zugeschnitten ist. Hier sind das «spiel_2.py» und spiler_2.py» welches einfach Kopien mit kleinen Änderungen der originalen «spieler.py» und «spiel.py» sind.
-In der Auswertung erstellet man für jeden Parameter eine Liste, in welche man die entsprechenden Werte einfüllt (z.B. werte1=[0.2,0.4,0.6,0.8,1]). Danach passt man die Auswertungsliste an die Anzahl und Länge der Parameter an.
+In der Auswertung erstellet man für jeden Parameter eine Liste, in welche man die entsprechenden Werte einfüllt (z.B. werte1=[0.2,0.4,0.6,0.8,1]). Danach passt man die Auswertungsliste an die Anzahl und Länge der Parameterlisten an.
 Danach fügt man in der init Funktion des Spielers die Parameter hinzu. In diesem Beispiel wird nur ein Wert pro Entscheidungssituation übergeben. Als nächstes modifiziert man die  neuen Programme «spieler_2.py» und «spiel_2.py», so dass  diese Werte an den Spieler übergeben werden und diese an den richtigen Stellen die Entscheidungen bestimmen.
 Jetzt passt man den Block mit den for-Schleifen an. Es muss für den ersten Spieler für jeden Parameter eine Schleife geben, dasselbe dann auch noch für den zweiten Spieler.
 Am Ende muss man im Teil unter den for-Schleifen die Initialisierung der Spieler, den Vergleich ob zweimal dieselbe Strategie vorhanden ist und die Addition in der Auswertungsliste an die Anzahl der Parameter anpassen.
-
+Für die Strategien des Turniers wurden auch immer leicht angepasste Versionen der Programme erstellt.
 
 ## Das Turnier
 

@@ -71,9 +71,9 @@ Die folgenden Programmdateien, die hier kurz erläutert werden, sind die Basispr
 #### Immobilie.py
 ##### Attribute:
 - Die meisten Attribute sind vom Namen her selbsterklärend 
-- self.x und self.y sind für die Position in der grafischen Umsetzung
-- self.startwert Kaufpreis des Grundstückes
-- self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das synchrone bauen)
+- self.x und self.y sind die Position in der grafischen Umsetzung
+- self.startwert ist der Kaufpreis des Grundstückes
+- self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das Synchronebauen)
 
 ##### Eigenschaften:
 Bauen:
@@ -98,11 +98,11 @@ Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man 
 
 ##### Attribute:
 -Die meisten Attribute sind vom Namen her selbsterklärend
--self.pasch Eine Zahl wie viel Mal hintereinander ein Pasch geworfen wurde
--self.posx und self.posy Ist die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
+-self.pasch Eine Angabe wie viel Mal hintereinander ein Pasch geworfen wurde
+-self.posx und self.posy Sind die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
 -self.gefängniskarten Ist die Anzahl der Karten die man besitzt, mit denen man ohne Busse aus dem Gefängnis gehen kann
 -self.gekauft Ist eine Liste mit allen gekauften Immobilien
--self.bahnen,self.werke,self.eins-self.acht Sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des synchronen Bauens.
+-self.bahnen,self.werke,self.eins-self.acht Sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des Synchronenbauens.
 -self.gefängnis Kann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
 ##### Eigenschaften:
 Wurf:
@@ -141,7 +141,7 @@ In diesem Programm habe ich mir das Rechnen mit Matrizen am Computer beigebracht
 In der Funktion Spiel wird zuerst alles nötige importiert und initialisiert, wie zum Beispiel die Immobilien oder die Ereigniskartenliste.
 In der for-Schleife findet dann erst das richtige Spiel statt.
 1.	Es wird die Funktion Wurf aufgerufen
-2.	In einer for-Schleife geht man durch die gekauften Immobilien und kann bauen
+2.	In einer for-Schleife werden die gekauften Immobilien durchlaufen, und es kann gebaut werden
 3.	Wenn man im Minus ist, so werden, solange man noch Häuser hat, Häuser in einer «while True Schleife» abgebaut. Kommt man nicht aus dem Minus, so wird die Funktion mit einem return beendet, welche den Sieger in Form einer Zahl zurückgibt.
 4.	Der zweite Spieler ist an der Reihe
 5.	Ist das Spiel nach 10000 Zügen nicht beendet, so wird der Spieler mit mehr Geld zum Sieger.
@@ -150,7 +150,7 @@ In der for-Schleife findet dann erst das richtige Spiel statt.
 
 #### Grafisch Main.py
 
-Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafischen Elemente noch in das Programm mit einfliessen.  Es ist ein Programm in dem einen Spieler das Spiel gegen die Siegerstrategie spielen kann. Wenn man es startet,öffnet sich ein Fenster mit dem Spiel, die Aktionen werden aber durch Eingaben (Die Eingaben sind Buchstaben, diese werden mit den dazu gehörenden Aktionen angezeigt) im Terminal/Inputfeld gesteuert. Um das Spiel zu starten, drückt der Spieler die Leertaste, sobald das Monopoly-Fenster geöffnet ist. "spieler_mensch.py" ist die "spieler.py" Version für den menschlichen Spieler.
+Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafischen Elemente noch in das Programm mit einfliessen.  Es ist ein Programm in dem einen Spieler das Spiel gegen die Siegerstrategie spielen kann.  Wenn man es startet, öffnet sich ein Fenster mit dem Spiel. Die Aktionen werden jedoch durch Eingaben (die Eingaben sind Buchstaben, die zusammen mit den dazugehörigen Aktionen angezeigt werden) im Terminal/Inputfeld gesteuert. Um das Spiel zu starten, drückt der Spieler die Leertaste, sobald das Monopoly-Fenster geöffnet ist. "spieler_mensch.py" ist die "spieler.py" Version für den menschlichen Spieler.
 
 ## Das Implementieren einer Strategie am Beispiel aus dem Ordner "Erklärung der Dokumentation":
 
@@ -166,17 +166,17 @@ Für die Strategien des Turniers wurden auch immer leicht angepasste Versionen d
 
 ### Runde 1
 
-Alle geldbasierten Strategien und deren Ergebnisse finden sich im Ordner "Geldbasierte Strategien des Turniers" wieder.
-Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse finden sich im Ordner "Wahrscheinlichkeitsbasierte Strategien des Turniers" wieder.
+Alle geldbasierten Strategien und deren Ergebnisse befinden sich im Ordner "Geldbasierte Strategien des Turniers".
+Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse befinden sich im Ordner "Wahrscheinlichkeitsbasierte Strategien des Turniers".
 
 ### Runde 2
 
-Die Sachen zu dieser Runde finden sich im Ordner "Random" wieder.
+Die Sachen zu dieser Runde befinden sich im Ordner "Random".
 
 Die fünf besten geldbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 1-5 in dem Ordner.
 Die fünf besten wahrscheinlichkeitsbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 6-10 in dem Ordner.
 
 ### Runde 3
 
-Im Ordner "Finale Strategien" finden sich alles aus Runde 3 wieder.
+Im Ordner "Finale Strategien" befinden sich alles aus Runde 3.
 

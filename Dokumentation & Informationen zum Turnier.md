@@ -22,7 +22,7 @@
 │   └── strategie_5.py
 ├── Geldbasierte Strategien des Turniers
 │   ├── Ergebnisse_3
-│   ├── Erggebnisse3.xlsx
+│   ├── Ergebnisse3.xlsx
 │   ├── main_3.py
 │   ├── spiel_3.py
 │   └── spieler_3.py

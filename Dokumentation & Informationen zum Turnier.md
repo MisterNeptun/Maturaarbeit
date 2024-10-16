@@ -77,16 +77,16 @@ Die meisten Attribute sind durch ihren Namen selbsterklärend.
 - self.farbe Immobilien sind auf  Spielfeld in Farbgruppen angeordnet(wichtig für das synchronen Bauen) und hier ist die jeweilige Gruppe gespeichert. 
 
 ##### Eigenschaften:
-Bauen:<br>
+<br>Bauen:<br>
 - Überprüft mit der Funktion Bauenüberprüfen(), ob man bauen darf.
 - Zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
-Abbauen:<br>
+<br>Abbauen:<br>
 - Überprüft mit der Funktion Abbauenüberprüfen(), ob man abbauen darf.
 - Gibt ein Teil des Geldes zurück, baut Haus ab und senkt den Preis des Feldes.
-Bauenüberprüfen:<br>
+<br>Bauenüberprüfen:<br>
 - In den ersten ca. 9 Zeilen überprüft das Programm ob schon alle Häuser, respektive Hotels verbaut wurden.
 - Dann kommt für jede Immobiliengruppe («Farbgruppe») ein Teil, der überprüft, ob man bauen kann, da innerhalb der Gruppe synchron gebaut werden muss.
-Abbauenüberprüfen:<br>
+<br>Abbauenüberprüfen:<br>
 - Überprüft, ob man abbauen darf, da dies auch synchron erfolgen muss (funktioniert genauso wie Bauenüberprüfen()).
 
 

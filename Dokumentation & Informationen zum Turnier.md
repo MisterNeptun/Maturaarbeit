@@ -113,7 +113,8 @@ Wurf:
 5.	Als nächstes wird die bezahl und die kauf Funktion aufgerufen.
 6.	Wenn ich in diesem Wurf ein Pasch geworfen habe und da ich jetzt alle Aktionen machen konnte, die ich trotz des geworfenen Ergebnisses durfte, muss ich jetzt ein zweites Mal durch die Funktion Wurf. Genau für dies sind die nächsten Zeilen verantwortlich.
 7.	Als letztes werde ich, wenn ich im Gefängnis bin, noch bestraft. Dies entweder mit einer Busse oder so dass ich eine Gefängniskarte verliere.
-Bezahlen
+
+Bezahlen:
 Zuerst sucht man, ob die eigene Position mit der eines verkauften Grundstückes übereinstimmt. Hier wird überprüft, ob es sich um ein Werk, eine Bahn oder um eine normale Immobilie handelt. Als letztes wird dem Besitzer die entsprechende Summe bezahlt, ist die Immobilie ein Werk oder eine Bahn muss diese Summe zuerst noch ermittelt werden.
 
 Kaufen:
@@ -123,18 +124,17 @@ Kanzlei und Chance:
 Bei beiden Ereigniskarten läuft es gleich ab. Als erstes wird überprüft, ob man den Stapel der Karten neu auffüllen müssen. Danach wird mit einer Zufallszahl eine zufällige Karte gezogen und die entsprechende Aktion wird ausgeführt. Am Ende verschwindet diese Karte aus dem Stapel.
 
 Grafische Position:
-
 Rechnet die Position des Spielers in der grafischen Umsetzung aus.
 
 Wurf_grafisch:
 Macht das Gleiche wie die Funktion «Wurf», ausserdem sind hier noch die Funktionen draw() und grafischeposition() integriert. Diese sind zuständig, dass der Spieler auch während seinem Zug auf dem grafischen Spielfeld gezeichnet wird.
 
 #### M.py
-Hier wird zuerst die Matrix definiert. In der Funktion Wahrscheinlichkeiten() wird die Zugwahrscheinlichkeit nach einer bestimmten Anzahl von Zügen ausgerechnet.
+Hier wird zuerst die Matrix definiert. In der Funktion Wahrscheinlichkeiten() wird die Zugwahrscheinlichkeit nach einer bestimmten Anzahl von Zügen ausgerechnet. Die Matrix findet sich auch noch in einer Excel-Datei wieder.
 
 #### Np.py
 
-In diesem Programm habe ich mir das Rechnen mit Matrizen am Computer beigebracht. Hier findet man noch eine Funktion für Eigenwerte und Eigenvektoren, die ich in M.py nie verwendet habe.
+In diesem Programm habe ich mir das Rechnen mit Matrizen am Computer beigebracht. Hier findet man noch eine Funktion für Eigenwerte und Eigenvektoren, die ich in M.py nie verwendet habe. 
 
 
 #### Spiel.py

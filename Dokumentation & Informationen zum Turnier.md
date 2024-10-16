@@ -86,12 +86,12 @@ Abbauen:
 Bauenueberpruefen:
 - In den ersten ca. 9 Zeilen überprüft das Programm ob schon alle Häuser, respektive Hotels verbaut wurden.
 - Dann kommt für jede Immobiliengruppe («Farbgruppe») ein Teil, der überprüft, ob man bauen kann, da innerhalb der Gruppe synchron gebaut werden muss.
-Abbauenüberpruefen:
+Abbauenüberprüfen:
 - Überprüft, ob man abbauen darf, da dies auch synchron erfolgen muss (funktioniert genauso wie Bauenüberprüfen()).
 
 
 #### Bahnen.py und Werke.py
-Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man auf ihnen nicht bauen kann und dass die Beträge, die man dem Eigentümer beim Betreten des Feldes zahlen muss, anders berechnet werden. Diese Beträge werden jedoch an einem anderen Ort berechnet (spieler.py). Darum ist diese Klasse sehr ähnlich wie die Immobilien Klasse.
+Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man auf ihnen nicht bauen kann und dass die Beträge, die man dem Eigentümer beim Betreten des Feldes zahlen muss, anders berechnet werden. Diese Beträge werden jedoch an einem anderen Ort berechnet (spieler.py). Darum ist diese Klasse sehr ähnlich wie die Immobilienklasse.
 
 
 
@@ -110,7 +110,7 @@ Wurf:
 1.	Das Programm erstellt zufällig die Ergebnisse der beiden Würfel
 2.	Es schaut, ob man ein Pasch geworfen hat.
 3.	Es wird kontrolliert, ob es das dritte Pasch in Folge ist. Wenn dies der Fall ist, wird der Spieler ins Gefängnis geschickt.
-4.	Ist dies nicht der Fall, so zieht man vorwärts und es überprüft gewisse Sachen, wie zum Beispiel ob ich eine Ereigniskarte ziehen muss, ob ich über den Start gezogen bin und deshalb ein Rundenkapital erhalte oder ob ich wegen des Polizistenfeldes ins Gefängnis gehen muss.
+4.	Ist dies nicht der Fall, so zieht man vorwärts und es überprüft gewisse Sachen, wie zum Beispiel ob ich eine Ereigniskarte ziehen muss, ob ich über den Start gezogen bin und deshalb ein Rundenkapital erhalte oder ob ich wegen des Polizistenfelds ins Gefängnis gehen muss.
 5.	Als nächstes wird die bezahl und die kauf Funktion aufgerufen.
 6.	Wenn ich in diesem Wurf einen Pasch geworfen habe und alle erlaubten Aktionen durchgeführt wurden, muss ich die Funktion Wurf() erneut durchlaufen.
 7.	Als letztes werde ich, wenn ich im Gefängnis bin, noch bestraft. Dies entweder mit einer Busse oder so dass ich eine Gefängniskarte verliere.
@@ -160,7 +160,7 @@ In das importieren wir eine neue erstellte Version der Programme Spiel.py und Sp
 In der Auswertung erstellet man für jeden Parameter eine Liste, in welche man die entsprechenden Werte einfüllt (z.B. werte1=[0.2,0.4,0.6,0.8,1]). Danach passt man die Auswertungsliste an die Anzahl und Länge der Parameterlisten an.
 Danach fügt man in der init Funktion des Spielers die Parameter hinzu. In diesem Beispiel wird nur ein Wert pro Entscheidungssituation übergeben. Als nächstes modifiziert man die  neuen Programme «spieler_2.py» und «spiel_2.py», so dass  diese Werte an den Spieler übergeben werden und diese an den richtigen Stellen die Entscheidungen bestimmen.
 Jetzt passt man den Block mit den for-Schleifen an. Es muss für den ersten Spieler für jeden Parameter eine Schleife geben, dasselbe dann auch noch für den zweiten Spieler.
-Am Ende muss man im Teil unter den for-Schleifen die Initialisierung der Spieler, den Vergleich ob zweimal dieselbe Strategie vorhanden ist und die Addition in der Auswertungsliste an die Anzahl der Parameter anpassen.
+Am Ende muss man im Teil unter den for-Schleifen die Initialisierung der Spieler, den Vergleich ob zweimal dieselbe Strategie vorhanden ist und die Addition in der Auswertungsliste an die Anzahl der Parameter, anpassen.
 Für die Strategien des Turniers wurden auch immer leicht angepasste Versionen der Programme erstellt.
 
 ## Das Turnier

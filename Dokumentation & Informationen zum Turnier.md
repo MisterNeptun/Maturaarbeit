@@ -119,7 +119,7 @@ Bezahlen:<br>
 Zuerst sucht man, ob die eigene Position mit der eines verkauften Grundstückes übereinstimmt. Hier wird überprüft, ob es sich um ein Werk, eine Bahn oder um eine normale Immobilie handelt. Als letztes wird dem Besitzer die entsprechende Summe bezahlt, ist die Immobilie ein Werk oder eine Bahn muss diese Summe zuerst noch ermittelt werden.
 
 Kaufen:<br>
-Zuerst wird überprüft, ob das Feld schon verkauft wurde oder nicht. Wenn es noch nicht verkauft wurde, wird es wieder nach Farbgruppe gruppiert. In den Gruppen wird es in die entsprechende Liste hinzugefügt und wenn man dann die Gruppe komplett hat, wird der Anfangswert verdoppelt. Als letztes zahlt man noch den Kaufpreis und gewisse Listen werden aktualisiert.
+Diese Funktion wird aufgerufen, wenn man ein Grundstück kaufen will. Zuerst wird überprüft, ob das Feld schon verkauft wurde oder nicht. Ist es noch nicht verkauft, wird es wieder nach Farbgruppe gruppiert. In den Gruppen wird es in die entsprechende Liste hinzugefügt und wenn man dann die Gruppe komplett hat, wird der Anfangswert verdoppelt. Als letztes zahlt man noch den Kaufpreis und gewisse Listen werden aktualisiert.
 
 Kanzlei und Chance:<br>
 Bei beiden Ereigniskarten läuft es gleich ab. Als erstes wird überprüft, ob man den Stapel der Karten neu auffüllen müssen. Danach wird mit einer Zufallszahl eine zufällige Karte gezogen und die entsprechende Aktion wird ausgeführt. Am Ende verschwindet diese Karte aus dem Stapel.

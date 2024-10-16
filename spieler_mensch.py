@@ -310,7 +310,7 @@ class Mensch():
             self.bezahlen(verkaufteimobilien)
             self.grafischeposition()
             draw()
-            self.eingabe=input("Für kaufen: k")
+            self.eingabe=input("Für kaufen: k    nicht kaufen: s")
 
             if self.eingabe=="k":
                 self.kaufen(nochnichtgekaufteimobilien,verkaufteimobilien)

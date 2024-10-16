@@ -71,27 +71,27 @@ Die folgenden Programmdateien bilden die Basis für die spezifischen Programme d
 
 #### Immobilie.py
 ##### Attribute:
-Die meisten Attribute sind vom Namen her selbsterklärend 
+Die meisten Attribute sind durch ihren Namen selbsterklärend. 
 - self.x und self.y sind wichtig für die Position in der grafischen Umsetzung
 - self.startwert ist der Kaufpreis des Grundstückes
-- self.farbe Immobilien sind auf  Spielfeld in Farbgruppen angeordnet(wichtig für das Synchronebauen) und hier ist die jeweilige Gruppe gespeichert. 
+- self.farbe Immobilien sind auf  Spielfeld in Farbgruppen angeordnet(wichtig für das synchronen Bauen) und hier ist die jeweilige Gruppe gespeichert. 
 
 ##### Eigenschaften:
 Bauen:
 - Überprüft mit der Funktion Bauenüberprüfen(), ob man bauen darf.
 - Zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
 Abbauen:
-- Überprüft, ob man abbauen darf mit der Funktion Abbauenüberprüfen()
+- Überprüft mit der Funktion Abbauenüberprüfen(), ob man abbauen darf.
 - Gibt ein Teil des Geldes zurück, baut Haus ab und senkt den Preis des Feldes.
 Bauenueberpruefen:
 - In den ersten ca. 9 Zeilen überprüft das Programm ob schon alle Häuser, respektive Hotels verbaut wurden.
-- Dann kommt für jede Immobiliengruppe («Farbgruppe») ein Teil, der überprüft, ob man bauen kann, denn man muss ja innerhalb der Gruppe synchron bauen.
-Abbauenüueberpruefen:
-- Überprüft, ob man abbauen darf, da man dies auch synchron tun muss (funktioniert gleich wie Bauenueberpruefen().
+- Dann kommt für jede Immobiliengruppe («Farbgruppe») ein Teil, der überprüft, ob man bauen kann, da innerhalb der Gruppe synchron gebaut werden muss.
+Abbauenüberpruefen:
+- Überprüft, ob man abbauen darf, da dies auch synchron erfolgen muss (funktioniert genauso wie Bauenüberprüfen()).
 
 
 #### Bahnen.py und Werke.py
-Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man auf ihnen nicht bauen kann und dass die Beträge, die man dem Eigentümer beim Betreten des Feldes zahlen muss, anders berechnet werden. Diese Beträge werden jedoch an einem anderen Ort berechnet(spieler.py). Darum ist diese Klasse sehr ähnlich wie die Immobilien Klasse.
+Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man auf ihnen nicht bauen kann und dass die Beträge, die man dem Eigentümer beim Betreten des Feldes zahlen muss, anders berechnet werden. Diese Beträge werden jedoch an einem anderen Ort berechnet (spieler.py). Darum ist diese Klasse sehr ähnlich wie die Immobilien Klasse.
 
 
 
@@ -103,16 +103,16 @@ Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man 
 - self.posx und self.posy sind die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
 - self.gefängniskarten ist die Anzahl der Karten die man besitzt, mit denen man ohne Busse aus dem Gefängnis gehen kann
 - self.gekauft ist eine Liste mit allen gekauften Immobilien
-- self.bahnen,self.werke,self.eins-self.acht sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des Synchronenbauens.
+- self.bahnen,self.werke,self.eins-self.acht sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des synchronen Bauens.
 - self.gefängnis Kann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
 ##### Eigenschaften:
 Wurf:
 1.	Das Programm erstellt zufällig die Ergebnisse der beiden Würfel
 2.	Es schaut, ob man ein Pasch geworfen hat.
-3.	Es wird kontrolliert, ob es das dritte Pasch in Folge ist. Wenn dies zutreffend ist, schickt es den Spieler ins Gefängnis.
+3.	Es wird kontrolliert, ob es das dritte Pasch in Folge ist. Wenn dies der Fall ist, wird der Spieler ins Gefängnis geschickt.
 4.	Ist dies nicht der Fall, so zieht man vorwärts und es überprüft gewisse Sachen, wie zum Beispiel ob ich eine Ereigniskarte ziehen muss, ob ich über den Start gezogen bin und deshalb ein Rundenkapital erhalte oder ob ich wegen des Polizistenfeldes ins Gefängnis gehen muss.
 5.	Als nächstes wird die bezahl und die kauf Funktion aufgerufen.
-6.	Wenn ich in diesem Wurf ein Pasch geworfen habe und da ich jetzt alle Aktionen machen konnte, die ich trotz des geworfenen Ergebnisses durfte, muss ich jetzt ein zweites Mal durch die Funktion Wurf. Genau für dies sind die nächsten Zeilen verantwortlich.
+6.	Wenn ich in diesem Wurf einen Pasch geworfen habe und alle erlaubten Aktionen durchgeführt wurden, muss ich die Funktion Wurf() erneut durchlaufen.
 7.	Als letztes werde ich, wenn ich im Gefängnis bin, noch bestraft. Dies entweder mit einer Busse oder so dass ich eine Gefängniskarte verliere.
 
 Bezahlen:<br>
@@ -122,7 +122,7 @@ Kaufen:<br>
 Diese Funktion wird aufgerufen, wenn man ein Grundstück kaufen will. Zuerst wird überprüft, ob das Feld schon verkauft wurde oder nicht. Ist es noch nicht verkauft, wird es wieder nach Farbgruppe gruppiert. In den Gruppen wird es in die entsprechende Liste hinzugefügt und wenn man dann die Gruppe komplett hat, wird der Anfangswert verdoppelt. Als letztes zahlt man noch den Kaufpreis und gewisse Listen werden aktualisiert.
 
 Kanzlei und Chance:<br>
-Bei beiden Ereigniskarten läuft es gleich ab. Als erstes wird überprüft, ob man den Stapel der Karten neu auffüllen müssen. Danach wird mit einer Zufallszahl eine zufällige Karte gezogen und die entsprechende Aktion wird ausgeführt. Am Ende verschwindet diese Karte aus dem Stapel.
+Bei beiden Ereigniskarten läuft es gleich ab. Als erstes wird überprüft, ob man den Stapel der Karten neu auffüllen müssen. Danach wird mit einer Zufallszahl eine zufällige Karte gezogen und die entsprechende Aktion wird ausgeführt. Am Ende wird diese Karte aus dem Stapel entfernt.
 
 Grafische Position:<br>
 Rechnet die Position des Spielers in der grafischen Umsetzung aus.
@@ -156,7 +156,7 @@ Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafisch
 ## Das Implementieren einer Strategie am Beispiel aus dem Ordner "Erklärung der Dokumentation":
 
 Wir haben das Auswertungsprogramm «main spieler_2.py».
-In das importieren wir eine neue erstellte Version der Programme Spiel.py und Spieler.py, welches auf die spezifischen Strategien zugeschnitten ist. Hier sind das «spiel_2.py» und spiler_2.py» welches einfach Kopien mit kleinen Änderungen der originalen «spieler.py» und «spiel.py» sind.
+In das importieren wir eine neue erstellte Version der Programme Spiel.py und Spieler.py, welche auf die spezifischen Strategien zugeschnitten sind. Hier sind das «spiel_2.py» und spiler_2.py» welches einfach Kopien mit kleinen Änderungen der originalen «spieler.py» und «spiel.py» sind.
 In der Auswertung erstellet man für jeden Parameter eine Liste, in welche man die entsprechenden Werte einfüllt (z.B. werte1=[0.2,0.4,0.6,0.8,1]). Danach passt man die Auswertungsliste an die Anzahl und Länge der Parameterlisten an.
 Danach fügt man in der init Funktion des Spielers die Parameter hinzu. In diesem Beispiel wird nur ein Wert pro Entscheidungssituation übergeben. Als nächstes modifiziert man die  neuen Programme «spieler_2.py» und «spiel_2.py», so dass  diese Werte an den Spieler übergeben werden und diese an den richtigen Stellen die Entscheidungen bestimmen.
 Jetzt passt man den Block mit den for-Schleifen an. Es muss für den ersten Spieler für jeden Parameter eine Schleife geben, dasselbe dann auch noch für den zweiten Spieler.
@@ -172,7 +172,7 @@ Alle wahrscheinlichkeitsbasierten Strategien und deren Ergebnisse befinden sich 
 
 ### Runde 2
 
-Die Sachen zu dieser Runde befinden sich im Ordner "Random".
+Die Programme zu dieser Runde befinden sich im Ordner "Random".
 
 Die fünf besten geldbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 1-5 in dem Ordner.
 Die fünf besten wahrscheinlichkeitsbasierten Strategien sind in der Reihenfolge der Rangliste als Strategien 6-10 in dem Ordner.

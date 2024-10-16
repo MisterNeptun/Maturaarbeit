@@ -99,11 +99,11 @@ Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man 
 
 ##### Attribute:
  Die meisten Attribute sind vom Namen her selbsterklärend
-- self.pasch Eine Angabe wie viel Mal hintereinander ein Pasch geworfen wurde
-- self.posx und self.posy Sind die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
-- self.gefängniskarten Ist die Anzahl der Karten die man besitzt, mit denen man ohne Busse aus dem Gefängnis gehen kann
-- self.gekauft Ist eine Liste mit allen gekauften Immobilien
-- self.bahnen,self.werke,self.eins-self.acht Sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des Synchronenbauens.
+- self.pasch ist eine Angabe wie viel Mal hintereinander ein Pasch geworfen wurde
+- self.posx und self.posy sind die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
+- self.gefängniskarten ist die Anzahl der Karten die man besitzt, mit denen man ohne Busse aus dem Gefängnis gehen kann
+- self.gekauft ist eine Liste mit allen gekauften Immobilien
+- self.bahnen,self.werke,self.eins-self.acht sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des Synchronenbauens.
 - self.gefängnis Kann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
 ##### Eigenschaften:
 Wurf:

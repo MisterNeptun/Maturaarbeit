@@ -150,7 +150,7 @@ In der for-Schleife findet dann erst das richtige Spiel statt.
 
 #### Grafisch Main.py
 
-Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafischen Elemente noch in das Programm mit einfliessen.  Es ist ein Programm in dem einen Spieler das Spiel gegen die Siegerstrategie spielen kann. "spieler_mensch.py" ist die "spieler.py" Version für den menschlichen Spieler.
+Funktioniert gleich wie das Programm Spiel, hat den Unterschied das die grafischen Elemente noch in das Programm mit einfliessen.  Es ist ein Programm in dem einen Spieler das Spiel gegen die Siegerstrategie spielen kann. Wenn man es startet,öffnet sich ein Fenster mit dem Spiel, die Aktionen werden aber durch Eingaben im Terminal/Inputfeld gesteuert. "spieler_mensch.py" ist die "spieler.py" Version für den menschlichen Spieler.
 
 ## Das implementieren einer Strategie am Beispiel aus dem Ordner "Erklärung der Dokumentation":
 

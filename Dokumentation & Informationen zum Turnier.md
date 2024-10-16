@@ -72,7 +72,7 @@ Die folgenden Programmdateien bilden die Basis für die spezifischen Programme d
 #### Immobilie.py
 ##### Attribute:
 Die meisten Attribute sind vom Namen her selbsterklärend 
-- self.x und self.y sind die Position in der grafischen Umsetzung
+- self.x und self.y sind wichtig für die Position in der grafischen Umsetzung
 - self.startwert ist der Kaufpreis des Grundstückes
 - self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das Synchronebauen)
 

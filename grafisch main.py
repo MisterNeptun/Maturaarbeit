@@ -151,30 +151,7 @@ while True:
                 gameon=True
 
     if gameon==True:
-        """""
-
-        draw()
-        time.sleep(1)
-
-        player1.wurf_grafisch(verkaufteimobilien, karten1, karten2, karten1zumauffuellen, karten2zumauffuellen, nochnichtgekaufteimmobilien, draw)
-        draw()
-        time.sleep(1)
-        draw()
-        time.sleep(1)
-        for i in range(len(player1.gekauft)):
-            player1.gekauft[i].bauen(player1,verkaufteimobilien)
-        draw()
-        if player1.geld < 0:
-            while True:
-                for i in range(len(player1.gekauft)):
-                    player1.gekauft[i].abbauen(player1)
-                    draw()
-                    if player1.geld >= 0:
-                        break
-                if player1.geld >= 0:
-                    break
-
-        """""
+  
         player1.wurf_grafisch(verkaufteimobilien,karten1,karten2,karten1zumauffuellen,karten2zumauffuellen,nochnichtgekaufteimmobilien,draw)
         draw()
         while True:
@@ -198,23 +175,10 @@ while True:
 
 
         time.sleep(1)
-        print("xxxxxxxxxxxx")
         player2.wurf_grafisch(verkaufteimobilien, karten1, karten2, karten1zumauffuellen, karten2zumauffuellen, nochnichtgekaufteimmobilien, draw)
         draw()
         time.sleep(1)
-        """""
-        for i in range(len(player2.gekauft)):
-            player2.gekauft[i].bauen(player2,verkaufteimobilien)
-        if player2.geld < 0:
-            while True:
-                for i in range(len(player2.gekauft)):
-                    player2.gekauft[i].abbauen(player2)
-                    draw()
-                    if player2.geld >= 0:
-                        break
-                if player2.geld >= 0:
-                    break
-        """
+        
         if player2.wert2 * 10000 > player2.geld:
             player2.gekauft.sort(key=lambda x: x.startwert, reverse=player2.wert3)
             for i in range(len(player2.gekauft)):
@@ -223,7 +187,7 @@ while True:
                 if player2.wert2 * 10000 < player2.geld:
                     break
 
-        #print(player1.geld, player2.geld)
+       
         if player2.geld<0:
             while True:
                 player2.gekauft.sort(key=lambda x: x.startwert, reverse= not player2.wert3)

@@ -78,7 +78,7 @@ Die folgenden Programmdateien bilden die Basis für die spezifischen Programme d
 
 ##### Eigenschaften:
 Bauen:
-- Überprüft, ob man bauen darf mit der Funktion Bauenüberprüfen().
+- Überprüft mit der Funktion Bauenüberprüfen(), ob man bauen darf.
 - Zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
 Abbauen:
 - Überprüft, ob man abbauen darf mit der Funktion Abbauenüberprüfen()

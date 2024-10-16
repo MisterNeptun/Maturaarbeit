@@ -66,7 +66,8 @@
 
 ### Dokumentation des Programms
 
-Die folgenden Programmdateien, die hier kurz erläutert werden, sind die Basisprogramme, auf denen die spezifischen Programme der Strategie aufbauen. Diese spezifischen Programme unterscheiden sich nicht wesentlich von den Basisprogrammen und sollten durch diese Erläuterungen selbst erklärt werden.
+Die folgenden Programmdateien bilden die Basis für die spezifischen Programme der Strategien. Diese spezifischen Programme unterscheiden sich nicht wesentlich von den Basisprogrammen und sind durch diese Erläuterungen weitgehend selbsterklärend.
+
 
 #### Immobilie.py
 ##### Attribute:

@@ -83,7 +83,7 @@ Bauen:
 Abbauen:
 - Überprüft mit der Funktion Abbauenüberprüfen(), ob man abbauen darf.
 - Gibt ein Teil des Geldes zurück, baut Haus ab und senkt den Preis des Feldes.
-Bauenueberpruefen:
+Bauenüberprüfen:
 - In den ersten ca. 9 Zeilen überprüft das Programm ob schon alle Häuser, respektive Hotels verbaut wurden.
 - Dann kommt für jede Immobiliengruppe («Farbgruppe») ein Teil, der überprüft, ob man bauen kann, da innerhalb der Gruppe synchron gebaut werden muss.
 Abbauenüberprüfen:

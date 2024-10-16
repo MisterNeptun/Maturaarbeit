@@ -77,16 +77,16 @@ Die meisten Attribute sind durch ihren Namen selbsterklärend.
 - self.farbe Immobilien sind auf  Spielfeld in Farbgruppen angeordnet(wichtig für das synchronen Bauen) und hier ist die jeweilige Gruppe gespeichert. 
 
 ##### Eigenschaften:
-Bauen:
+Bauen:<br>
 - Überprüft mit der Funktion Bauenüberprüfen(), ob man bauen darf.
 - Zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
-Abbauen:
+Abbauen:<br>
 - Überprüft mit der Funktion Abbauenüberprüfen(), ob man abbauen darf.
 - Gibt ein Teil des Geldes zurück, baut Haus ab und senkt den Preis des Feldes.
-Bauenüberprüfen:
+Bauenüberprüfen:<br>
 - In den ersten ca. 9 Zeilen überprüft das Programm ob schon alle Häuser, respektive Hotels verbaut wurden.
 - Dann kommt für jede Immobiliengruppe («Farbgruppe») ein Teil, der überprüft, ob man bauen kann, da innerhalb der Gruppe synchron gebaut werden muss.
-Abbauenüberprüfen:
+Abbauenüberprüfen:<br>
 - Überprüft, ob man abbauen darf, da dies auch synchron erfolgen muss (funktioniert genauso wie Bauenüberprüfen()).
 
 
@@ -106,7 +106,7 @@ Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man 
 - self.bahnen,self.werke,self.eins-self.acht sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des synchronen Bauens.
 - self.gefängnis Kann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
 ##### Eigenschaften:
-Wurf:
+Wurf:<br>
 1.	Das Programm erstellt zufällig die Ergebnisse der beiden Würfel
 2.	Es schaut, ob man ein Pasch geworfen hat.
 3.	Es wird kontrolliert, ob es das dritte Pasch in Folge ist. Wenn dies der Fall ist, wird der Spieler ins Gefängnis geschickt.

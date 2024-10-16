@@ -104,7 +104,7 @@ karten2zumauffuellen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 karten1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 karten2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 gameon=False
-print("1.Warte bis sich das Fenster mit dem Monopoly geöffnet hat 2.Drücke die Space-Taste um zu starten")
+print("1.Warten Sie bis sich das Fenster mit dem Monopoly geöffnet hat 2.Drücken Sie dann die Space-Taste um zu starten")
 print("Seine Aktionen kann der Spieler hier durch Eingaben von Buchstaben vornehemen, welche dem Spieler immer Vorgeschlagen werden")
 
 def draw():

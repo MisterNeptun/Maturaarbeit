@@ -104,6 +104,7 @@ karten2zumauffuellen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 karten1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 karten2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 gameon=False
+print("1.Warte bis sich das Fenster mit dem Monopoly geöffnet hat 2.Drücke die Space-Taste um zu starten")
 
 def draw():
     text1_1 = font.render(str(player1.geld), True, "Black")
@@ -158,12 +159,12 @@ while True:
             draw()
             eingabe=input("aktion  bauen:b abbauen:a Zug beenden:s")
             if eingabe == "b":
-                pos=int(input("POS"))
+                pos=int(input("Position(Startfeld=0, erstes Feld nach dem Startfeld=1, zweites Feld nach dem Startfeld=2 etc.): "))
                 for i in range(len(player1.gekauft)):
                     if pos==player1.gekauft[i].position:
                         player1.gekauft[i].bauen(player1,verkaufteimobilien)
             if eingabe == "a":
-                pos=int(input("POS"))
+                pos=int(input("Position(Startfeld=0, erstes Feld nach dem Startfeld=1, zweites Feld nach dem Startfeld=2 etc.): "))
                 for i in range(len(player1.gekauft)):
                     if pos==player1.gekauft[i].position:
                         player1.gekauft[i].abbauen(player1)

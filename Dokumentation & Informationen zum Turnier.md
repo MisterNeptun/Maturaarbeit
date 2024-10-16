@@ -7,7 +7,7 @@
 ```bash
 ├── Dokumentation & Informationen zum Turnier.md
 ├── Erklärung der Dokumentation
-│   ├── Ergebniss
+│   ├── Ergebnis
 │   ├── main spieler_2.py
 │   ├── spiel_2.py
 │   └── spieler_2.py

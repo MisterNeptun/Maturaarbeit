@@ -44,7 +44,7 @@
 │   └── strategie_9.py
 ├── Wahrscheinlichkeitsbasierte Strategien des Turniers
 │   ├── Ergebnisse
-│   ├── Erggebnisse4.xlsx
+│   ├── Ergebnisse4.xlsx
 │   ├── main_4.py
 │   ├── spiel_4.py
 │   └── spieler_4.py

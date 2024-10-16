@@ -114,19 +114,19 @@ Wurf:
 6.	Wenn ich in diesem Wurf ein Pasch geworfen habe und da ich jetzt alle Aktionen machen konnte, die ich trotz des geworfenen Ergebnisses durfte, muss ich jetzt ein zweites Mal durch die Funktion Wurf. Genau für dies sind die nächsten Zeilen verantwortlich.
 7.	Als letztes werde ich, wenn ich im Gefängnis bin, noch bestraft. Dies entweder mit einer Busse oder so dass ich eine Gefängniskarte verliere.
 
-Bezahlen:
+Bezahlen:<br>
 Zuerst sucht man, ob die eigene Position mit der eines verkauften Grundstückes übereinstimmt. Hier wird überprüft, ob es sich um ein Werk, eine Bahn oder um eine normale Immobilie handelt. Als letztes wird dem Besitzer die entsprechende Summe bezahlt, ist die Immobilie ein Werk oder eine Bahn muss diese Summe zuerst noch ermittelt werden.
 
-Kaufen:
+Kaufen:<br>
 Zuerst wird überprüft, ob das Feld schon verkauft wurde oder nicht. Wenn es noch nicht verkauft wurde, wird es wieder nach Farbgruppe gruppiert. In den Gruppen wird es in die entsprechende Liste hinzugefügt und wenn man dann die Gruppe komplett hat, wird der Anfangswert verdoppelt. Als letztes zahlt man noch den Kaufpreis und gewisse Listen werden aktualisiert.
 
-Kanzlei und Chance:
+Kanzlei und Chance:<br>
 Bei beiden Ereigniskarten läuft es gleich ab. Als erstes wird überprüft, ob man den Stapel der Karten neu auffüllen müssen. Danach wird mit einer Zufallszahl eine zufällige Karte gezogen und die entsprechende Aktion wird ausgeführt. Am Ende verschwindet diese Karte aus dem Stapel.
 
-Grafische Position:
+Grafische Position:<br>
 Rechnet die Position des Spielers in der grafischen Umsetzung aus.
 
-Wurf_grafisch:
+Wurf_grafisch:<br>
 Macht das Gleiche wie die Funktion «Wurf», ausserdem sind hier noch die Funktionen draw() und grafischeposition() integriert. Diese sind zuständig, dass der Spieler auch während seinem Zug auf dem grafischen Spielfeld gezeichnet wird.
 
 #### M.py

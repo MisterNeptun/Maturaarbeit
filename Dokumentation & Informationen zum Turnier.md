@@ -146,10 +146,10 @@ In diesem Programm habe ich mir das Rechnen mit Matrizen am Computer beigebracht
 #### Spiel.py
 In der Funktion Spiel wird zuerst alles nötige importiert und initialisiert, wie zum Beispiel die Immobilien oder die Ereigniskartenliste.
 In der for-Schleife findet dann erst das richtige Spiel statt.
-1.	Es wird die Funktion Wurf aufgerufen
-2.	In einer for-Schleife werden die gekauften Immobilien durchlaufen, und es kann gebaut werden
+1.	Es wird die Funktion Wurf aufgerufen.
+2.	In einer for-Schleife werden die gekauften Immobilien durchlaufen, und es kann gebaut werden.
 3.	Wenn man im Minus ist, so werden, solange man noch Häuser hat, Häuser in einer «while True Schleife» abgebaut. Kommt man nicht aus dem Minus, so wird die Funktion mit einem return beendet, welche den Sieger in Form einer Zahl zurückgibt.
-4.	Der zweite Spieler ist an der Reihe
+4.	Der zweite Spieler ist an der Reihe.
 5.	Ist das Spiel nach 10000 Zügen nicht beendet, so wird der Spieler mit mehr Geld zum Sieger.
 
 

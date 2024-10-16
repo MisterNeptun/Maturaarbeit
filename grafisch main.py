@@ -156,7 +156,7 @@ while True:
         draw()
         while True:
             draw()
-            eingabe=input("aktion  bauen:b abbauen:a beenden:s")
+            eingabe=input("aktion  bauen:b abbauen:a Zug beenden:s")
             if eingabe == "b":
                 pos=int(input("POS"))
                 for i in range(len(player1.gekauft)):

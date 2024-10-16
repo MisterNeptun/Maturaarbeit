@@ -66,6 +66,8 @@
 
 ### Dokumentation des Programms
 
+Die folgenden Programmfiles die hier kurz erklärt werden, sind die Basisprogramme auf denen später die Strategien spezifischen Programme aufgebaut sind. Diese spezifischen Proigramme unterscheiden sich von den Basisprogrammen, aber nicht gross.
+
 #### Immobilie.py
 ##### Attribute:
 - Die meisten Attribute sind vom Namen her selbsterklärend 
@@ -73,7 +75,7 @@
 - self.startwert Kaufpreis des Grundstückes
 - self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das synchrone bauen)
 
-#####Eigenschaften:
+##### Eigenschaften:
 Bauen:
 - Überprüft, ob man bauen darf mit der Funktion Bauenüberprüfen().
 - Zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
@@ -94,7 +96,7 @@ Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man 
 
 #### Spieler.py
 
-#####Attribute:
+##### Attribute:
 -Die meisten Attribute sind vom Namen her selbsterklärend
 -self.pasch Eine Zahl wie viel Mal hintereinander ein Pasch geworfen wurde
 -self.posx und self.posy Ist die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
@@ -102,7 +104,7 @@ Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man 
 -self.gekauft Ist eine Liste mit allen gekauften Immobilien
 -self.bahnen,self.werke,self.eins-self.acht Sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des synchronen Bauens.
 -self.gefängnis Kann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
-#####Eigenschaften:
+##### Eigenschaften:
 Wurf:
 1.	Erstellt es zufällig die Ergebnisse der beiden Würfel
 2.	Es schaut, ob man ein Pasch geworfen hat.

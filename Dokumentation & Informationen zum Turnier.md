@@ -107,10 +107,10 @@ Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man 
 -self.gefängnis Kann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
 ##### Eigenschaften:
 Wurf:
-1.	Erstellt es zufällig die Ergebnisse der beiden Würfel
+1.	Das Programm erstellt zufällig die Ergebnisse der beiden Würfel
 2.	Es schaut, ob man ein Pasch geworfen hat.
-3.	Kontrolliert, ob es das dritte Pasch in Folge ist. Wenn dies zutreffend ist, schickt es den Spieler ins Gefängnis.
-4.	Ist dies nicht der Fall, so zieht man vorwärts und es überprüft gewisse Sachen, wie zum Beispiel ob ich eine Ereigniskarte ziehen muss, ob ich über den Start gezogen bin und deshalb ein Rundenkapital erhalte oder wegen des Polizistenfeldes ins Gefängnis muss.
+3.	Es wird kontrolliert, ob es das dritte Pasch in Folge ist. Wenn dies zutreffend ist, schickt es den Spieler ins Gefängnis.
+4.	Ist dies nicht der Fall, so zieht man vorwärts und es überprüft gewisse Sachen, wie zum Beispiel ob ich eine Ereigniskarte ziehen muss, ob ich über den Start gezogen bin und deshalb ein Rundenkapital erhalte oder ob ich wegen des Polizistenfeldes ins Gefängnis gehen muss.
 5.	Als nächstes wird die bezahl und die kauf Funktion aufgerufen.
 6.	Wenn ich in diesem Wurf ein Pasch geworfen habe und da ich jetzt alle Aktionen machen konnte, die ich trotz des geworfenen Ergebnisses durfte, muss ich jetzt ein zweites Mal durch die Funktion Wurf. Genau für dies sind die nächsten Zeilen verantwortlich.
 7.	Als letztes werde ich, wenn ich im Gefängnis bin, noch bestraft. Dies entweder mit einer Busse oder so dass ich eine Gefängniskarte verliere.

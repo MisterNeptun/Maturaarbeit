@@ -1,5 +1,5 @@
 # Maturaarbeit
-## Auf der Suche nach der besten Strategie für das Spiel "Monopoly"
+## Auf der Suche nach möglichst guten Strategien für das Spiel "Monopoly"
 
 
 #### Ordnerstruktur
@@ -67,13 +67,13 @@
 ### Dokumentation des Programms
 
 #### Immobilie.py
-Attribute:
+#####Attribute:
 - Die meisten Attribute sind vom Namen her selbsterklärend 
 - self.x und self.y sind für die Position in der grafischen Umsetzung
 - self.startwert Kaufpreis des Grundstückes
 - self.farbe Immobilien sind auf  Spielfeld in Gruppen angeordnet(wichtig für das synchrone bauen)
 
-Eigenschaften:
+#####Eigenschaften:
 Bauen:
 - Überprüft, ob man bauen darf mit der Funktion Bauenüberprüfen().
 - Zieht Geld ab, baut das Haus und steigert den Preis des Feldes.
@@ -88,13 +88,13 @@ Abbauenüueberpruefen:
 
 
 #### Bahnen.py und Werke.py
-Beide sind eigentlich gleich wie Immobilien, mit den Unterschieden, dass man auf ihnen nicht bauen kann und dass die Beträge, die man dem Eigentümer beim Betreten des Feldes zahlen muss, anders berechnet werden. Diese Beträge werden jedoch an einem anderen Ort berechnet. Darum ist diese Klasse sehr ähnlich wie die Immobilien Klasse.
+Beide sind eigentlich gleich wie Immobilien.py, mit den Unterschieden, dass man auf ihnen nicht bauen kann und dass die Beträge, die man dem Eigentümer beim Betreten des Feldes zahlen muss, anders berechnet werden. Diese Beträge werden jedoch an einem anderen Ort berechnet(spieler.py). Darum ist diese Klasse sehr ähnlich wie die Immobilien Klasse.
 
 
 
 #### Spieler.py
 
-Attribute:
+#####Attribute:
 -Die meisten Attribute sind vom Namen her selbsterklärend
 -self.pasch Eine Zahl wie viel Mal hintereinander ein Pasch geworfen wurde
 -self.posx und self.posy Ist die Position des Spielers auf dem Spielbrett in der grafischen Umsetzung
@@ -102,7 +102,7 @@ Attribute:
 -self.gekauft Ist eine Liste mit allen gekauften Immobilien
 -self.bahnen,self.werke,self.eins-self.acht Sind Listen mit den entsprechenden Immobilien der jeweiligen Gruppen. Es braucht sie für das Überprüfen des synchronen Bauens.
 -self.gefängnis Kann die Werte True oder False haben. Ist zur Überprüfung, ob man nur besuchsweise im Gefängnis oder richtig im Gefängnis ist.
-Eigenschaften:
+#####Eigenschaften:
 Wurf:
 1.	Erstellt es zufällig die Ergebnisse der beiden Würfel
 2.	Es schaut, ob man ein Pasch geworfen hat.
@@ -176,5 +176,5 @@ Die fünf besten wahrscheinlichkeitsbasierten Strategien sind in der Reihenfolge
 
 ### Runde 3
 
-Im Ordner "Finale Strategien" finden sich alles aus Runde 3 wieder
+Im Ordner "Finale Strategien" finden sich alles aus Runde 3 wieder.
 

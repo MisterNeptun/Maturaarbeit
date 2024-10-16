@@ -67,7 +67,7 @@
 ### Dokumentation des Programms
 
 #### Immobilie.py
-#####Attribute:
+##### Attribute:
 - Die meisten Attribute sind vom Namen her selbsterklärend 
 - self.x und self.y sind für die Position in der grafischen Umsetzung
 - self.startwert Kaufpreis des Grundstückes

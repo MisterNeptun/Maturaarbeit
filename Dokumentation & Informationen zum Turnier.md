@@ -66,7 +66,7 @@
 
 ### Dokumentation des Programms
 
-Die folgenden Programmdateien bilden die Basis für die spezifischen Programme der Strategien. Diese spezifischen Programme unterscheiden sich nicht wesentlich von den Basisprogrammen und sind durch diese Erläuterungen weitgehend selbsterklärend.
+Die folgenden Programmdateien bilden die Basis für die spezifischen Programme der Strategien. Diese spezifischen Programme unterscheiden sich nicht wesentlich von den Basisprogrammen und sind durch diese Erläuterungen weitgehend selbsterklärend.  Zusätzlich müssen die Module NumPy und Pygame installiert werden.
 
 
 #### Immobilie.py
